@@ -1,0 +1,41 @@
+p {
+  max-width: 70ch;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: Helvetica;
+}
+
+.imagery {
+  border: solid 2px slategray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  object-position: center;
+}
+
+.copy-container {
+  background: white;
+  flex: 1;
+  margin: 5px;
+  padding: 5px;
+}
+
+.copy-wrapper {
+  padding: 0 1rem;
+}
+
+.copy-wrapper * + * {
+  margin-top: 1rem;
+}
+
+.image-wrapper {
+  margin: 5px;
+  padding: 5px;
+  flex-basis: 50%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
